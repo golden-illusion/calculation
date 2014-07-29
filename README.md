@@ -19,3 +19,8 @@ Simple calculator written by C for Ruby
 > ...
 
 
+##API
+1. sum: Calculator.sum(x, y)
+2. subtraction: Calculator.sub(x, y)
+3. multiplication: Calculator.mul(x, y)
+4. division: Calculator.div(x, y)
