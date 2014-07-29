@@ -6,7 +6,7 @@ Simple calculator written by C for Ruby
 
 ##How to test
 * clone sourcecode
-* compile
+* compile by yourself (or run test directly with precompiled **calculator.so**)
 
 > cd calculator  
 > rake compile

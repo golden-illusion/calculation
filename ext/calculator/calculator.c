@@ -38,7 +38,7 @@ VALUE _div(VALUE self, VALUE x, VALUE y) {
   int _x = NUM2DBL(x);
   int _y = NUM2DBL(y);
   if (_y == 0.0) {
-    return x;
+    return rb_str_new2("zero division detection");
   }else {
     return rb_float_new(_x / _y);
   }
