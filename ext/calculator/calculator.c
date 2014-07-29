@@ -1,19 +1,19 @@
 #include <ruby.h>
 
-VALUE Calculation = Qnil;
+VALUE Calculator = Qnil;
 
-void Init_calculation();
+void Init_calculator();
 VALUE _sum(VALUE self, VALUE x, VALUE y);
 VALUE _sub(VALUE self, VALUE x, VALUE y);
 VALUE _mul(VALUE self, VALUE x, VALUE y);
 VALUE _div(VALUE self, VALUE x, VALUE y);
 
-void Init_calculation() {
-  Calculation = rb_define_module("Calculation");
-  rb_define_singleton_method(Calculation, "sum", _sum, 2);
-  rb_define_singleton_method(Calculation, "sub", _sub, 2);
-  rb_define_singleton_method(Calculation, "mul", _mul, 2);
-  rb_define_singleton_method(Calculation, "div", _div, 2);
+void Init_calculator() {
+  Calculator = rb_define_module("Calculator");
+  rb_define_singleton_method(Calculator, "sum", _sum, 2);
+  rb_define_singleton_method(Calculator, "sub", _sub, 2);
+  rb_define_singleton_method(Calculator, "mul", _mul, 2);
+  rb_define_singleton_method(Calculator, "div", _div, 2);
 }
 
 VALUE _sum(VALUE self, VALUE x, VALUE y) {
